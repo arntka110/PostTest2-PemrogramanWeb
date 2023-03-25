@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Konsultasi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="luar">
+            <div class="logo"><a href="beranda.html">CoCo.</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="beranda.html">Tentang Kami</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="form.html" class="btn-hijau">Chat Dokter Hewan</a></li>
+                    <li><a href="profil.html">Profil Saya</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- tentang konsultasi -->
+    <section id="konsultasi">
+        <div class="kolom">
+            <h1><a href="#daftar-konsul">Chat dengan Dokter Hewan</a></h1>
+            <p>
+                Isi data diri dan segera dapatkan solusi terbaik untuk hewan kesayanganmu.
+                Kini, konsultasi kesehatan hewan jadi lebih mudah dan hemat dengan platform teledevice CoCo.
+                Dokter hewan terdekat dan mudah, ya CoCo!
+            </p>
+            <h3><img src="image/icons8-dog-paw-30.png" class="ikon">DOKTER HEWAN TERPERCAYA</h3>
+            <p>Dokter hewan yang kamu pilih sudah teregistrasi di bawah PDHI dan berpengalaman.</p>
+            <h3><img src="image/icons8-dog-paw-30.png" class="ikon">PELAYANAN CEPAT</h3>
+            <p>Respon cepat, pelayanan medis yang akurat dan dapat dipercaya.</p>
+            <h3><img src="image/icons8-dog-paw-30.png" class="ikon">SOLUSI TERBAIK</h3>
+            <p>Segala bentuk privasi terjaga</p>
+        </div>
+        <div class="foto-konsul"><img src="image/Icon-Web-1.png" width="110%"></div>
+    </section>
+
+    <!-- daftar konsultasi -->
+    <section id="daftar-konsul">
+        <div class="wrapper">
+            <div class="title">FORM KONSULTASI HEWAN</div>
+            <form id="form-konsul">
+                <div class="konsultasi-hewan">
+                    <div class="input-box">
+                        <span class="details">Nama Pengguna</span>
+                        <input type="text" placeholder="Nama anda" id="fnama" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Nomor WhatsApp</span>
+                        <input type="text" placeholder="08xxxxxxxxxx" id="fwa" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Kota Tempat Tinggal</span>
+                        <input type="text" placeholder="Kota tempat tinggal anda" id="fkota" required>
+                    </div>
+                    <div class="input-box" id="fperangkat">
+                        <span class="details">Perangkat/Device yang Dimiliki</span>
+                        <div class="top">
+                            <input class="checkbox" type="checkbox" id="android" value="Android" required>
+                            <label class="check" for="android">Smartphone berbasis Android</label>
+                        </div>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="ios" value="IOS" required>
+                            <label class="check" for="ios">Smartphone berbasis IOS</label>
+                        </div>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="laptop" value="Laptop" required>
+                            <label class="check" for="laptop">Laptop</label>
+                        </div>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="pc" value="PC/Komputer" required>
+                            <label class="check" for="pc">PC/Komputer</label>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Nama Hewan</span>
+                        <input type="text" placeholder="Nama hewan" id="fnamahewan" required>
+                    </div>
+                    <div class="jk" id="fgender">
+                        <input type="radio" name="gender" id="dot-1" value="Jantan" required>
+                        <input type="radio" name="gender" id="dot-2" value="Betina" required>
+                        <span class="jk-title">Jenis Kelamin Hewan</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Jantan</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Betina</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Jenis Hewan</span>
+                        <select class="select" name="jenis" id="fjenishewan" required>
+                            <option>Kucing</option>
+                            <option>Anjing</option>
+                            <option>Kelinci</option>
+                            <option>Hamster</option>
+                            <option>Sugar Glider</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Ras/Breed Hewan</span>
+                        <input type="text" placeholder="Ras/breed hewan" id="frashewan" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Umur Hewan</span>
+                        <input type="text" placeholder="Umur hewan" id="fumurhewan" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Berat Hewan</span>
+                        <input type="text" placeholder="Berat hewan" id="fberathewan" required>
+                    </div>
+                    <div class="input-section-box">
+                        <span class="details">Keluhan yang dialami</span>
+                        <textarea placeholder="Keluhan yang dialami hewan" id="fkeluhan" required></textarea>
+                        <p class="keterangan">*Mohon informasikan keluhan yang dialami (dan riwayat obat jika ada)</p>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Kapan Ingin Berkonsultasi?</span>
+                        <input type="text" placeholder="Waktu berkonsultasi" id="fwaktukonsul" required>
+                        <p class="keterangan">*Waktu Konsultasi Anda bergantung kepada ketersediaan Dokter Hewan dan Antrian yang ada.
+                            Admin CoCo akan menghubungi Anda lebih lanjut melalui WhatsApp untuk konfirmasi jadwal.
+                        </p>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Kode Promo (jika ada)</span>
+                        <input type="text" placeholder="Kode promo" id="fkodepromo">
+                    </div>
+                    <p class="ketentuan">
+                        *Dengan menggunakan Fitur Konsultasi Online CoCo, Anda telah membaca dan menyetujui
+                        <span style="color: #F58634;">Syarat dan Ketentuan</span> dan
+                        <span style="color: #F58634">Kebijakan Privasi</span> dari CoCo Pet Shop.
+                    </p>
+                    <div class="button">
+                        <input type="submit" id="form-ks" value="Daftar Sekarang">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="luar">
+            <div class="footer">
+                <div class="footer-section">
+                    <div class="kontak">
+                        <h3>Konsultasi Hewan</h3>
+                        <p class="daftar">Kini, konsultasi kesehatan hewan jadi lebih mudah dan hemat dengan platform teleadvice Hewania.</p>
+                        <a href="form.html"><img src="image/daftar.png"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="alamat">
+                        <h3>CoCo HQ</h3>
+                        <h5>PT CoCo Solusi Digital</h5>
+                        <p><img src="image/icons8-place-marker-16.png"> Jl. Jakarta II Blok AA3, Loa Bakung, Samarinda, Kalimantan Timur</p>
+                        <p><img src="image/icons8-phone-16.png"> +62 5312 3456 7891</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="sosmed">
+                        <h3>Sosial Media</h3>
+                        <a href=""><img src="image/icons8-whatsapp-48.png"></a>
+                        <a href=""><img src="image/icons8-instagram-48.png"></a>
+                        <a href=""><img src="image/icons8-facebook-48.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <div class="luar">
+                    &copy; 2023. <b>CoCo Pet Shop</b> All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/form.js"></script>
+</html>

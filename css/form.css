@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Tahoma;
+}
+
+#konsultasi{
+    padding-top: 25px;
+    padding-left: 50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(254,235,222,1) 82%, rgba(245,134,52,1) 100%);
+}
+
+section{
+    padding: 120px;
+    margin-bottom: 0px;
+}
+
+.foto-konsul{
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+#daftar-konsul{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,235,222,1) 88%, rgba(245,134,52,1) 100%);
+}
+
+.wrapper{
+    overflow: hidden;
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgb(172, 171, 171);
+}
+
+.wrapper .title{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #F58634;
+    padding-top: 12px;
+}
+
+.wrapper form .konsultasi-hewan{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+form .konsultasi-hewan .input-box{
+    margin-bottom: 30px;
+    width: calc(100%/2-20px);
+}
+
+form .input-box .details{
+    display: block;
+    font-weight: bold;
+    color: rgb(62, 62, 62);
+    margin-bottom: 7px;
+}
+
+form .input-box .keterangan{
+    font-size: small;
+    margin-top: 7px;
+    color: rgb(62, 62, 62);
+}
+
+.konsultasi-hewan .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #bcbcbc;
+    border-bottom-width: 2px;
+}
+
+form .konsultasi-hewan .input-section-box{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.konsultasi-hewan .input-section-box textarea{
+    height: 200px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 15px;
+    border: 1px solid #bcbcbc;
+    border-bottom-width: 2px;
+}
+
+form .input-section-box .details{
+    display: block;
+    font-weight: bold;
+    color: rgb(62, 62, 62);
+    margin-bottom: 7px;
+}
+
+form .input-section-box .keterangan{
+    font-size: small;
+    margin-top: 7px;
+    color: rgb(62, 62, 62);
+}
+
+form .ketentuan{
+    font-size: small;
+    margin-top: 7px;
+    color: rgb(62, 62, 62);
+}
+
+.select{
+    height: 50px;
+    width: 103%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.konsultasi-hewan .input-box .top{
+    margin-top: 10px;
+}
+
+.konsultasi-hewan .input-box .checkbox{
+    margin-right: 10px;
+    margin-top: 5px;
+    height: 25px; 
+    width: 25px;
+    border-radius: 1px;
+}
+
+.konsultasi-hewan .input-box .check{
+    position: absolute;
+    margin-top: 7px;
+}
+
+form .jk .jk-title{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(62, 62, 62);
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .category{
+    display: flex;
+    width: 60%;
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
+
+form .category label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+form .category label .dot{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    background: #d1712c;
+    border-color: #d9d9d9;
+}
+
+form .button{
+    padding-left: 30%;
+    display:block;
+    align-items: center;
+    height: 45px;
+    margin: 70px 0px 0px 0px;
+    padding: 0;
+    text-align: center;
+}
+
+form .button input{
+    height: 45px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    color: #FFFF;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #F58634;
+}
+
+form .button input:hover{
+    background: #00AF91;
+}
